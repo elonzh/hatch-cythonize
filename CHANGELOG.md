@@ -2,24 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.6.0] - 2025-04-26
 
 ### Bug Fixes
 
-- Implementation
+- Arch
+- Ci ([#52](https://github.com/elonzh/hatch-cythonize/issues/52))
+- UnicodeDecodeError on non-utf locales
+- Module name shoule be normalized as default dir_name joshua-auchincloss/hatch-cython#59
+- Remove hatch from deps to speedup building joshua-auchincloss/hatch-cython#61
+- Ruff and build actions
 
 ### Features
 
-- Explicit build targets (#46, #47)
+- V0.6.0rc0 (#46, #47, #50)
+
+### Misc
+
+- Add .idea files
+- Rename it to hatch-cythonize
 
 ## [0.5.1] - 2024-02-19
 
 ### Bug Fixes
 
-- Build permissions ([#28](https://github.com/joshua-auchincloss/hatch-cython/issues/28))
+- Build permissions ([#28](https://github.com/elonzh/hatch-cythonize/issues/28))
 - Ci
 - No auto changelog
-- Release ci [ci skip] ([#40](https://github.com/joshua-auchincloss/hatch-cython/issues/40))
+- Release ci [ci skip] ([#40](https://github.com/elonzh/hatch-cythonize/issues/40))
 - Ci
 - Release
 
@@ -29,7 +39,7 @@ All notable changes to this project will be documented in this file.
 
 ### Miscellaneous Tasks
 
-- V0.5.1 ([#33](https://github.com/joshua-auchincloss/hatch-cython/issues/33))
+- V0.5.1 ([#33](https://github.com/elonzh/hatch-cythonize/issues/33))
 - Changelog
 - #34 - ci
 - Pr #35 - ci
@@ -38,7 +48,7 @@ All notable changes to this project will be documented in this file.
 - Doc [ci skip]
 - Changelog
 - Pr #38 from dev
-- Tighten ci ([#39](https://github.com/joshua-auchincloss/hatch-cython/issues/39))
+- Tighten ci ([#39](https://github.com/elonzh/hatch-cythonize/issues/39))
 - Changelog
 - V0.5.1
 
@@ -56,8 +66,6 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
-- Version [ci skip]
-- Trigger build
 - Depreciate `retain_intermediate_artifacts`
 - Macos linkage
 - Coverage
@@ -69,7 +77,6 @@ All notable changes to this project will be documented in this file.
 
 ### Miscellaneous Tasks
 
-- Pr #23 from joshua-auchincloss/v0.4.0-patch
 - Changelog
 
 ### Testing
@@ -80,7 +87,6 @@ All notable changes to this project will be documented in this file.
 
 ### Merge
 
-- Pr #24 from joshua-auchincloss/v0.4.0-patch
 - #26/v0.5.0
 
 ## [0.4.0] - 2023-09-14
@@ -89,12 +95,15 @@ All notable changes to this project will be documented in this file.
 
 - Tests
 - Tests
+- Version [ci skip]
+- Trigger build
 
 ### Miscellaneous Tasks
 
 - Readme [ci skip]
 - Lint [ci skip]
 - Readme [ci skip]
+- Pr #23 from joshua-auchincloss/v0.4.0-patch
 
 ### Refactor
 
@@ -109,6 +118,7 @@ All notable changes to this project will be documented in this file.
 ### Merge
 
 - Pr #22 from joshua-auchincloss/v0.4.0
+- Pr #24 from joshua-auchincloss/v0.4.0-patch
 
 ## [0.3.0] - 2023-09-01
 
@@ -221,14 +231,8 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
-- Build [ci skip]
-- Prompt build
 - Add numpy to test deps
 - Debug statements
-
-### Miscellaneous Tasks
-
-- Pr #9 from joshua-auchincloss/v0.2.0-patch [ci skip]
 
 ### Testing
 
@@ -238,14 +242,12 @@ All notable changes to this project will be documented in this file.
 
 ### Merge
 
-- Pr #10 from joshua-auchincloss/v0.2.0-patch
 - Pr #11 from joshua-auchincloss/v0.2.0-post
 
 ## [0.2.0] - 2023-08-27
 
 ### Bug Fixes
 
-- Use `llvmlite`
 - Add dep on mac
 - Debug
 - No xcode install
@@ -259,6 +261,12 @@ All notable changes to this project will be documented in this file.
 - Revert runner
 - `3.9` type compat
 - Windows tests
+- Build [ci skip]
+- Prompt build
+
+### Miscellaneous Tasks
+
+- Pr #9 from joshua-auchincloss/v0.2.0-patch [ci skip]
 
 ### Refactor
 
@@ -288,10 +296,14 @@ All notable changes to this project will be documented in this file.
 
 ### Merge
 
-- Pr #7 from joshua-auchincloss/v0.1.9-patch
 - Pr #8 from joshua-auchincloss/v0.2.0
+- Pr #10 from joshua-auchincloss/v0.2.0-patch
 
 ## [0.1.9] - 2023-08-26
+
+### Bug Fixes
+
+- Use `llvmlite`
 
 ### Miscellaneous Tasks
 
@@ -305,6 +317,7 @@ All notable changes to this project will be documented in this file.
 ### Merge
 
 - Pr #6 from joshua-auchincloss/v0.1.9
+- Pr #7 from joshua-auchincloss/v0.1.9-patch
 
 ## [0.1.8] - 2023-08-25
 
@@ -392,10 +405,6 @@ All notable changes to this project will be documented in this file.
 
 ## [0.1.2] - 2023-08-25
 
-### Bug Fixes
-
-- Lint
-
 ### Miscellaneous Tasks
 
 - Readme [ci skip]
@@ -405,6 +414,10 @@ All notable changes to this project will be documented in this file.
 - Remove`__main__`
 
 ## [0.1.1] - 2023-08-25
+
+### Bug Fixes
+
+- Lint
 
 ### Features
 
@@ -420,18 +433,13 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
-- Release
-
-## [0.1.0] - 2023-08-24
-
-### Bug Fixes
-
 - Tests
 - Nt file paths
 - Normalized included files
 - Dll
 - Debug verbose
 - Add .pyd
+- Release
 
 ### Features
 
