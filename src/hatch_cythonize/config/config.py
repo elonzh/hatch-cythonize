@@ -234,7 +234,7 @@ class Config:
         def with_argvalue(arg: str):
             # be careful with e.g. -Ox flags
             matched = list(filter(lambda s: arg.startswith(s), MUST_UNIQUE))
-            if len(matched):
+            if matched:
                 m = matched[0]
                 args[m] = arg.split(" ")
             else:
