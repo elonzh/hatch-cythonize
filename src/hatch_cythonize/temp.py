@@ -1,7 +1,5 @@
-from typing import TypedDict
-
 from hatch_cythonize.config import Config
-from hatch_cythonize.types import ListStr, ListT
+from hatch_cythonize.types import ListStr, ListT, TypedDict
 from hatch_cythonize.utils import options_kws
 
 

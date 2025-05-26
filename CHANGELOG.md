@@ -2,25 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.6.0] - 2025-04-26
+## [0.7.0] - 2025-05-26
+
+### Features
+
+- Support for python 3.7
+
+## [0.6.0] - 2025-04-27
 
 ### Bug Fixes
 
-- Arch
-- Ci ([#52](https://github.com/elonzh/hatch-cythonize/issues/52))
 - UnicodeDecodeError on non-utf locales
 - Module name shoule be normalized as default dir_name joshua-auchincloss/hatch-cython#59
 - Remove hatch from deps to speedup building joshua-auchincloss/hatch-cython#61
 - Ruff and build actions
 
-### Features
-
-- V0.6.0rc0 (#46, #47, #50)
-
 ### Misc
 
 - Add .idea files
 - Rename it to hatch-cythonize
+- Bump 0.6.0
+
+## [0.6.0rc0] - 2024-04-28
+
+### Bug Fixes
+
+- Arch
+- Ci ([#52](https://github.com/elonzh/hatch-cythonize/issues/52))
+
+### Features
+
+- V0.6.0rc0 (#46, #47, #50)
 
 ## [0.5.1] - 2024-02-19
 

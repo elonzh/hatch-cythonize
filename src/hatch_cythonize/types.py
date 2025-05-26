@@ -1,12 +1,12 @@
 from sys import version_info
-from typing import Literal, TypeVar, Union
+from typing import TypeVar, Union
 
 T = TypeVar("T")
 
 vmaj = (version_info[0], version_info[1])
 if vmaj >= (3, 10):
     from collections.abc import Callable
-    from typing import ParamSpec
+    from typing import Literal, ParamSpec, TypedDict
 
     TupleT = tuple
     DictT = dict
@@ -15,7 +15,7 @@ if vmaj >= (3, 10):
 else:
     from typing import Callable, Dict, List, Set, Tuple  # noqa: UP035, F401
 
-    from typing_extensions import ParamSpec
+    from typing_extensions import Literal, ParamSpec, TypedDict  # noqa: UP035, F401
 
     TupleT = Tuple  # noqa: UP006
     DictT = Dict  # noqa: UP006

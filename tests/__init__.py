@@ -15,5 +15,5 @@ else:
 
 path.append(str(p))
 
-from hatch_cythonize.__about__ import __version__  # noqa: E402
-from hatch_cythonize.devel import CythonBuildHook, src  # noqa: E402
+from hatch_cythonize.__about__ import __version__
+from hatch_cythonize.devel import CythonBuildHook, src
